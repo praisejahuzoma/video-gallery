@@ -87,3 +87,9 @@ video:focus{
     width: 30px;
     cursor: pointer;
 }
+.copyRight{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
