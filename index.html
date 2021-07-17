@@ -15,41 +15,43 @@
            <div class="col">
              <div class="feature-img">
                 <img src="media/pics-1.png" width="100%">
-                <img src="media/play.png" class="play-btn"/>
+                <img src="media/play.png" class="play-btn" onclick="playVideo('media/vd1.mp4')"/>
              </div>
            </div>
            <div class="col">
               <div class="small-img-row">
                  <div class="small-img">
-                    <img src="media/pics-4.jpeg" width="160px" >
-                    <img src="media/play.png" class="play-btn"/>
+                    <img src="media/pics2jpg" width="160px" height="100px" >
+                    <img src="media/play.png" class="play-btn" onclick="playVideo('media/vd3.mp4')"/>
                  </div>
-                 <p>Best Friends Ever <br> V and JK</p>
+                 <p>Magic Shop <br> BTS</p>
               </div>
               <div class="small-img-row">
                 <div class="small-img">
-                   <img src="media/pics-3.jpeg" width="160px" >
-                   <img src="media/play.png" class="play-btn"/>
+                   <img src="media/pics3.jpeg" width="160px" height="100px" >
+                   <img src="media/play.png" class="play-btn" onclick="playVideo('media/vd4.webm')"/>
                 </div>
-                <p>Best video Ever</p>
+                <p>Lights <br> BTS</p>
              </div>
              <div class="small-img-row">
                 <div class="small-img">
-                   <img src="media/pics-2.jpeg" width="160px" >
-                   <img src="media/play.png" class="play-btn"/>
+                   <img src="media/pics4.png" width="160px" height="100px" >
+                   <img src="media/play.png" class="play-btn" onclick="playVideo('media/vd3.webm')"/>
                 </div>
-                <p>Best Friends Ever <br> V and JK</p>
+                <p>Permission to Dance <br> BTS</p>
              </div>
            </div>
         </div>
     </div>
 
     <!-- video player -->
-    <div class="video-player">
-      <video width="100%" controls autoplay>
+    <div class="video-player" id="videoPlayer">
+      <video width="100%" controls autoplay id="myVideo">
           <source src="media/dance.mp4" type="video/mp4">
       </video>
-      <img src="media/close.png" class="close-btn"/>
-    </div> 
+      <img src="media/close.png" class="close-btn" onclick="stopVideo()"/>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

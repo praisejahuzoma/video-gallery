@@ -42,6 +42,7 @@ body{
     border-radius: 6px;
     overflow: hidden;
     width: 85%;
+    height: 90px;
 }
 .small-img{
     position: relative;
@@ -72,8 +73,9 @@ body{
     height: 10px;
     position:absolute;
     left: 50%;
-    top:50%;
+    top:7%;
     transform: translate(-50%,-50%);
+    display: none;
 }
 video:focus{
     outline: none;
